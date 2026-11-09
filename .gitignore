@@ -1,0 +1,9 @@
+# lokální hodnoty agentury
+*/config.md
+
+# klientský kontext zůstává mimo git (v repu jen šablona a fiktivní ukázka)
+*/clients/*.md
+!*/clients/_template.md
+!*/clients/example.cz.md
+
+.DS_Store
