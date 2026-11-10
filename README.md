@@ -4,7 +4,7 @@ Skilly pro [Claude](https://claude.ai), které používáme v agentuře [Pudeto]
 
 | Skill | K čemu |
 | --- | --- |
-| [pudeto-posthog](pudeto-posthog/) | Bezpečná práce v PostHogu přes MCP (jen čtení jako výchozí, správný projekt, osobní údaje, kvóty) a recept na vyhodnocení košíku: funnel, zařízení a OS, prohlížeč v aplikaci, rychlost stránek, záznamy, srovnání s GA4, výstup pro klienta. |
+| [pudeto-posthog](pudeto-posthog/) | Bezpečná práce v PostHogu přes MCP (jen čtení jako výchozí, správný projekt, osobní údaje, limity free tarifu jako rozpočet, kontrola po nasazení) a recept na vyhodnocení košíku: funnel, zařízení a OS, prohlížeč v aplikaci, rychlost stránek, záznamy, srovnání s GA4, výstup pro klienta. |
 
 Další skilly (bezpečnostní pravidla, Google Tag Manager, Mergado) přibudou.
 

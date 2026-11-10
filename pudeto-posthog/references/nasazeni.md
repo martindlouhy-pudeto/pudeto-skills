@@ -26,7 +26,7 @@ Init tag jako setup tag e-commerce tagu, `oncePerEvent`; hláška „Re-initiali
 ## Session replay
 
 - **Maskování:** kde je osobní údaj jako text (stránka s adresou, děkovná stránka), nastavit maskování veškerého textu i obrázků; minimálně maskovat všechny vstupy.
-- **Kvóta:** zdarma 5 000 záznamů / měsíc na organizaci. Obchod s tisíci návštěv denně ji vyčerpá za pár dní a pak se nenahrává nic. Od začátku nahrávat jen relevantní návštěvy (trigger na URL nebo event – např. jen návštěvy se stránkou objednávky) nebo sampling. Minimální délka záznamu 2 s.
+- **Kvóta:** zdarma 5 000 záznamů / měsíc na organizaci. Obchod s tisíci návštěv denně ji vyčerpá za pár dní a pak se nenahrává nic. Od začátku nahrávat jen relevantní návštěvy (trigger na URL nebo event – např. jen návštěvy se stránkou objednávky) nebo sampling. Přesnou hodnotu spočítej po prvním dni podle SKILL §6.2 a ověř, že ji člověk opravdu nastavil. Minimální délka záznamu 2 s.
 - Záznamy zvyšují zátěž stránky – u pomalých stránek porovnat rychlost s nahráváním a bez.
 - Vedle jiného nástroje na záznamy (Smartlook, Hotjar) běží PostHog jen v rozsahu, kde ten druhý nestačí.
 
@@ -35,3 +35,4 @@ Init tag jako setup tag e-commerce tagu, `oncePerEvent`; hláška „Re-initiali
 - Preview: SDK z EU, token projektu, `$pageview` i po změně URL, e-commerce event s hodnotou, měnou a položkami shodnými s dataLayer, nic mimo rozsah, nic po „Jen nezbytné“, sousední tagy beze změny, kontrolní běh na staré verzi.
 - `purchase` se v Preview bez platby neověří – zkontrolovat v PostHogu po první objednávce (Activity) a zapsat.
 - Testovací eventy operátora v produkčním projektu zapsat do protokolu (čas, host), ať se nepletou do analýz.
+- 24 hodin po publikaci povinná kontrola podle SKILL §9.1 (úplnost událostí, rozsah, záznamy, rozpočet). U druhého nasazení teprve ona ukázala, že nákup chodí bez čísla objednávky a bez hodnoty.
