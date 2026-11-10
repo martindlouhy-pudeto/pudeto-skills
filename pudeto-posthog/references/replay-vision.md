@@ -4,7 +4,7 @@ Replay Vision nechá model projít záznamy a odpovědět na otázku. Spotřebov
 
 ## Postup
 
-1. **Kvóta.** `vision-quota-get` → limit, spotřeba, konec období. Do karty relace.
+1. **Kvóta a cena.** `vision-quota-get` → limit, spotřeba, konec období. `vision-scanners-estimate` → `credits_per_observation` pro zvolený model; počet relací × cena proti zbývajícím kreditům (SKILL §6.4). Do karty relace.
 2. **Záznamy existují?** Denní počet záznamů (SKILL §6.1). Vzorek ber jen z dnů, kdy se nahrávalo.
 3. **Vzorek.** `sql-recepty.md` Q19: relace, které došly na stránku objednávky a nezaplatily, se záznamem delším než 20 s. Rozvrstvi 25–30 relací:
    - Android s rozpracovaným formulářem 8, Android bez formuláře 8,
@@ -40,4 +40,4 @@ Do dokumentu: tabulka kategorie × počet × anonymní příklad („vstupenka 3
 
 ## Co si zapsat
 
-`scan_id`, počet relací, období vzorku, rozdělení po segmentech, spotřebu kreditů – do shrnutí v projektu a do klientského souboru (historie analýz). Stejný prompt na stejné relace se příště nezpoplatní.
+`scan_id`, počet relací, období vzorku, rozdělení po segmentech, spotřebu kreditů (rozdíl `credits_used` před a po, přepočtený na relaci) – do shrnutí v projektu a do klientského souboru (historie analýz). Ke každému nálezu ze záznamu slovní popis toho, co bylo vidět: záznamy ve free tarifu po 30 dnech mizí. Stejný prompt na stejné relace se příště nezpoplatní.
